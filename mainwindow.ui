@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainwindow</class>
+ <widget class="QMainWindow" name="mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1112</width>
+    <height>657</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Автосервис - Управление заказами</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupSearch">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>0</y>
+      <width>231</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Поиск</string>
+    </property>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>135</width>
+       <height>234</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Марка:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineMake"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Владелец:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineOwner"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Год от:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinYearFrom">
+        <property name="minimum">
+         <number>1990</number>
+        </property>
+        <property name="maximum">
+         <number>2026</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="spinYearTo">
+        <property name="minimum">
+         <number>1990</number>
+        </property>
+        <property name="maximum">
+         <number>2026</number>
+        </property>
+        <property name="value">
+         <number>2026</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>До:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSearch">
+        <property name="text">
+         <string>Поиск</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnReset">
+        <property name="text">
+         <string>Сбросить</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupCars">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>491</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Автомобили</string>
+    </property>
+    <widget class="QTableView" name="tableViewCars">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>481</width>
+       <height>281</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>230</y>
+       <width>481</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="btnAddCar">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDeleteCar">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>30</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widgetBottom" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>340</y>
+      <width>981</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <widget class="QGroupBox" name="groupOrders">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>471</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Заказы на работы</string>
+     </property>
+     <widget class="QTableView" name="tableViewOrders">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>461</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAddOrder">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить заказ</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDeleteOrder">
+      <property name="geometry">
+       <rect>
+        <x>364</x>
+        <y>230</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Удалить заказ</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupStats">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>0</y>
+       <width>481</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Статистика</string>
+     </property>
+     <widget class="QLabel" name="lblMaxRepair">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>21</y>
+        <width>190</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>Макс. стоимость ремонта: 0.00 ₽</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblMinRepair">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>40</y>
+        <width>183</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>Мин. стоимость ремонта: 0.00 ₽</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblMinParts">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>78</y>
+        <width>193</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>Мин. стоимость запчастей: 0.00 ₽</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblMaxParts">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>59</y>
+        <width>200</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>Макс. стоимость запчастей: 0.00 ₽</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblTotal">
+      <property name="geometry">
+       <rect>
+        <x>17</x>
+        <y>97</y>
+        <width>143</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>Общая стоимость: 0.00 ₽</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1112</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
